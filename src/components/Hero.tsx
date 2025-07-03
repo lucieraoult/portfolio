@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const scrollToAbout = () => {
-    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -26,11 +26,12 @@ const Hero = () => {
             // Senior Product Manager
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Building products that{" "}
-            <span className="text-gradient">matter</span>
+            Building {" "}
+            <span className="text-gradient">impactful</span>
+             {" "} products
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            I bridge the gap between user needs and technical possibilities,
+            I bridge the gap between user and business needs,
             turning complex problems into elegant solutions.
           </p>
           
@@ -47,7 +48,7 @@ const Hero = () => {
             <div className="flex items-center space-x-3">
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="mailto:sarah@example.com"
+                  href="mailto:lucieraoult@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   <Mail className="h-5 w-5" />
@@ -55,7 +56,7 @@ const Hero = () => {
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://linkedin.com/in/sarahchen"
+                  href="https://linkedin.com/in/lucie-raoult"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -65,7 +66,7 @@ const Hero = () => {
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://github.com/sarahchen"
+                  href="https://github.com/lucieraoult"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -76,17 +77,17 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div className="animate-slide-in">
-              <div className="text-3xl font-bold text-primary mb-2">8+</div>
-              <div className="text-muted-foreground text-sm">Years Experience</div>
+              <div className="text-3xl font-bold text-primary mb-2">6+</div>
+              <div className="text-muted-foreground text-sm">Years building</div>
             </div>
-            <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground text-sm">Products Shipped</div>
-            </div>
+            {/* <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
+              <div className="text-3xl font-bold text-primary mb-2">?</div>
+              <div className="text-muted-foreground text-sm">?</div>
+            </div> */}
             <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
-              <div className="text-3xl font-bold text-primary mb-2">$2M+</div>
+              <div className="text-3xl font-bold text-primary mb-2">$1M+</div>
               <div className="text-muted-foreground text-sm">Revenue Impact</div>
             </div>
           </div>

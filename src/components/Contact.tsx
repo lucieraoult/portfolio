@@ -9,30 +9,30 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       description: "Best for detailed project discussions",
-      action: "sarah.chen@email.com",
-      link: "mailto:sarah.chen@email.com"
+      action: "lucieraoult@gmail.com",
+      link: "mailto:lucieraoult@gmail.com"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
       description: "Professional networking and updates",
       action: "Connect with me",
-      link: "https://linkedin.com/in/sarahchen"
+      link: "https://linkedin.com/in/lucie-raoult"
     },
     {
       icon: Github,
       title: "GitHub",
       description: "Check out my code and contributions",
       action: "View repositories",
-      link: "https://github.com/sarahchen"
-    },
-    {
-      icon: Calendar,
-      title: "Schedule a Call",
-      description: "30-minute coffee chat about opportunities",
-      action: "Book time",
-      link: "https://calendly.com/sarahchen"
-    }
+      link: "https://github.com/lucieraoult"
+    }//,
+    // {
+    //   icon: Calendar,
+    //   title: "Schedule a Call",
+    //   description: "30-minute coffee chat about opportunities",
+    //   action: "Book time",
+    //   link: "https://calendly.com/sarahchen"
+    // }
   ];
 
   return (
@@ -46,12 +46,60 @@ const Contact = () => {
             Let's build something <span className="text-gradient">amazing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm always interested in hearing about new opportunities, exciting projects,
-            and connecting with fellow product enthusiasts.
+            I'm currently exploring new product opportunities and would love to connect. Whether you're hiring, building something ambitious, or just want to chat about product and tech, feel free to reach out.
           </p>
+          <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground mb-8 mt-4">
+            <div className="flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
+              London
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              Looking for a new role
+            </div>
+          </div>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        
+        <div className="flex items-center justify-center space-x-4 mb-12">
+          <Button
+            variant="default"
+            size="lg"
+            className="group"
+          >
+            <a
+              href="mailto:lucieraoult@gmail.com"
+              // className="hover:text-primary transition-colors"
+            >
+              {/* <Mail className="h-5 w-5" /> */}
+              Contact Me
+            </a>
+          </Button>
+          <div className="flex items-center space-x-3">
+            <Button variant="ghost" size="sm" asChild>
+              <a
+                href="https://linkedin.com/in/lucie-raoult"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a
+                href="https://github.com/lucieraoult"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+        
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"> */}
+        {/* <div className="flex jusityfy-center items-center flex-wrap gap-6 mb-12">
           {contactMethods.map((method, index) => (
             <Card
               key={method.title}
@@ -77,32 +125,30 @@ const Contact = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
-        <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 text-center">
+        {/* <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <Coffee className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Currently Available</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I'm open to discussing new opportunities, consulting projects, 
-              and advisory roles. If you're building something interesting and 
-              need product expertise, I'd love to hear about it.
+              I'm open to discussing new opportunities. If you're building something interesting, I'd love to hear about it.
             </p>
             <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground mb-8">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                San Francisco Bay Area
+                London
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                Available for new projects
+                Looking for a new role
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
-                <a href="mailto:sarah.chen@email.com">
+                <a href="mailto:lucieraoult@gmail.com">
                   Start a Conversation
                 </a>
               </Button>
@@ -113,7 +159,7 @@ const Contact = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground text-sm">
@@ -127,7 +173,7 @@ const Contact = () => {
       {/* Footer */}
       <footer className="mt-20 pt-8 border-t border-border text-center">
         <p className="text-muted-foreground text-sm">
-          © 2024 Sarah Chen. Built with React, TypeScript, and lots of ☕
+          Built with Lovable, ChatGPT, and a ☕️
         </p>
       </footer>
     </section>

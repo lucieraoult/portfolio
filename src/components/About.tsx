@@ -11,7 +11,7 @@ const About = () => {
     },
     {
       icon: Code,
-      title: "Tech-Savvy",
+      title: "Technical",
       description: "Deep technical understanding enables better product decisions.",
     },
     {

@@ -22,10 +22,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "About", id: "about" },
+    // { label: "About", id: "about" },
     { label: "Experience", id: "experience" },
-    { label: "Skills", id: "skills" },
-    { label: "Case Studies", id: "case-studies" },
+    // { label: "Skills", id: "skills" },
+    // { label: "Case Studies", id: "case-studies" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -43,7 +43,7 @@ const Navigation = () => {
             onClick={() => scrollToSection("hero")}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
-            sarah_chen.pm
+            lucie.page
           </button>
 
           {/* Desktop Navigation */}

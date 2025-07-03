@@ -6,60 +6,60 @@ import { MapPin, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      company: "TechCorp",
+      company: "Edgefolio",
       role: "Senior Product Manager",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      description: "Leading cross-functional teams to build AI-powered analytics platform serving 10M+ users. Responsible for product strategy, roadmap planning, and stakeholder management.",
+      period: "Apr 2024 - Present",
+      location: "London, UK",
+      description: "B2B SaaS startup building products for large investment banks and hedge funds. Reporting to co-founder and working in a cross-functional team of engineers and designers.",
       achievements: [
-        "Increased user engagement by 340% through ML-driven personalization",
-        "Led migration to microservices architecture (15% performance improvement)",
-        "Launched 3 major features with 95%+ customer satisfaction scores",
-        "Managed $2M annual product budget with 15% YoY cost optimization"
+        "Drove a near-million ARR product from concept to launch",
+        "Reduced churn rate by >20% in H1 2025 compared to full-year 2024",
+        "Led transformation to the product operating model",
+        "Hired 2 product designers",
+        "Promoted from Product Manager to Senior Product Manager within a year"
       ],
-      technologies: ["React", "Python", "Kubernetes", "PostgreSQL", "Redis", "ML Pipelines"]
+      technologies: ["Zero-to-One", "Enterprise SaaS", "Churn Reduction", "Security and Compliance", "Hiring"]
     },
     {
-      company: "StartupXYZ",
+      company: "Fixter",
       role: "Product Manager",
-      period: "2020 - 2022",
-      location: "Austin, TX",
-      description: "Built and scaled B2B SaaS platform from MVP to Series A. Worked closely with engineering team to establish product development processes and customer feedback loops.",
+      period: "Feb 2022 - Jan 2024",
+      location: "London, UK",
+      description: "End-to-end car maintenance platform startup, acquired by Renault. Led cross- functional teams with a focus on enhancing customer experience, operational scalability, and garage supply.",
       achievements: [
-        "Grew ARR from $0 to $5M in 18 months",
-        "Implemented agile development process (30% faster delivery)",
-        "Reduced churn rate by 45% through proactive customer success",
-        "Launched API platform with 200+ integrations"
+        "Reduced ops workload by 30% through booking-to-garage matching algorithm",
+        "Improved garage capacity model, reducing cancellation rate by 9%",
+        "Achieved a 20-point NPS increase within a year and +7.5% in overall CR",
+        "Led the launch of the market expansion into France, overcoming a 2-month delay"
       ],
-      technologies: ["Node.js", "MongoDB", "Docker", "AWS", "GraphQL", "Stripe API"]
+      technologies: ["Scaling Operations", "Customer Experience", "Data", "Supply Strategy", "Market Expansion"]
     },
     {
-      company: "BigTech Inc",
-      role: "Associate Product Manager",
-      period: "2018 - 2020",
-      location: "Seattle, WA",
-      description: "Supported mobile app development for consumer platform with 50M+ MAU. Focused on user onboarding, retention, and core feature development.",
+      company: "Epicery",
+      role: "Full-Stack Web Developer",
+      period: "Jul 2020 - May 2021",
+      location: "Paris, France",
+      description: "Food delivery startup focused on premium groceries and artisan shops, acquired by DPD Group.",
       achievements: [
-        "Improved onboarding completion rate by 60%",
-        "A/B tested 20+ features with statistical significance",
-        "Collaborated with data science team on predictive models",
-        "Reduced app crash rate by 80% through systematic debugging"
+        "Led end-to-end development of “Send as Gift” feature, from checkout to secure recipient view",
+        "Implemented a rebrand on the website with Tailwind CSS",
+        "Worked across the customer website, API backend, merchant app and internal tools"
       ],
-      technologies: ["React Native", "Swift", "Kotlin", "Firebase", "Amplitude", "Figma"]
+      technologies: ["Node.js", "Ruby", "React", "Tailwind CSS", "Ruby on Rails"]
     },
     {
-      company: "DevStudio",
-      role: "Software Engineer",
-      period: "2016 - 2018",
-      location: "Portland, OR",
+      company: "Nokues",
+      role: "Technical Co-Founder",
+      period: "Sep 2018 - Jun 2020",
+      location: "Barcelona, Spain",
       description: "Full-stack developer building custom web applications for clients. Transitioned from engineering to product management through customer-facing project leadership.",
       achievements: [
-        "Delivered 15+ client projects on time and under budget",
-        "Led technical architecture decisions for 3 major projects",
-        "Mentored 2 junior developers in modern web frameworks",
-        "Established code review and deployment best practices"
+        "Built a web app for end users to browse menus, place orders, and pay, with a management interface for restaurants to handle menus and incoming orders",
+        "Saw the app used at 3 events and processed over 200 orders",
+        "Onboarded 15 restaurants",
+        "Participated in Startupbootcamp accelerator"
       ],
-      technologies: ["JavaScript", "Ruby on Rails", "PostgreSQL", "AWS", "Git", "Linux"]
+      technologies: ["React", "Ruby on Rails", "Ruby"]
     }
   ];
 
@@ -74,7 +74,7 @@ const Experience = () => {
             My <span className="text-gradient">journey</span> so far
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From engineer to product leader, each role has shaped my understanding
+            From engineer to product manager, each role has shaped my understanding
             of what it takes to build exceptional products.
           </p>
         </div>
@@ -118,7 +118,7 @@ const Experience = () => {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold mb-3">Technologies</h4>
+                      <h4 className="font-semibold mb-3">Focus Areas</h4>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
                           <Badge
@@ -136,14 +136,6 @@ const Experience = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground">
-            <code className="bg-primary/10 px-2 py-1 rounded text-primary text-sm">
-              git log --oneline --graph | head -20
-            </code>
-          </p>
         </div>
       </div>
     </section>
