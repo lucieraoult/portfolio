@@ -1,8 +1,12 @@
 
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Copy } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCopyEmail } from "@/hooks/use-copy-email";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const Hero = () => {
+  const { copyEmailToClipboard, copiedEmail } = useCopyEmail();
+  
   const scrollToAbout = () => {
     document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -46,14 +50,27 @@ const Hero = () => {
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </Button>
             <div className="flex items-center space-x-3">
-              <Button variant="ghost" size="sm" asChild>
-                <a
-                  href="mailto:lucieraoult@gmail.com"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Mail className="h-5 w-5" />
-                </a>
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      onClick={copyEmailToClipboard}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {copiedEmail ? <Copy className="h-5 w-5" /> : <Mail className="h-5 w-5" />}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    {copiedEmail ? (
+                      <p>Email copied!</p>
+                    ) : (
+                      <p>Click to copy: lucieraoult@gmail.com</p>
+                    )}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <Button variant="ghost" size="sm" asChild>
                 <a
                   href="https://linkedin.com/in/lucie-raoult"
