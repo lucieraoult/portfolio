@@ -14,10 +14,10 @@ const Hero = () => {
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-32 h-32 border border-primary rounded-full"></div>
-        <div className="absolute top-40 right-32 w-16 h-16 bg-primary/20 rounded-full"></div>
+        {/* <div className="absolute top-20 left-20 w-32 h-32 border border-primary rounded-full"></div> */}
+        {/* <div className="absolute top-40 right-32 w-16 h-16 bg-primary/20 rounded-full"></div>
         <div className="absolute bottom-40 left-1/4 w-24 h-24 border border-primary/30 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-20 h-20 bg-primary/10 rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-20 h-20 bg-primary/10 rounded-full"></div> */}
       </div>
 
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
@@ -77,15 +77,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="animate-slide-in">
               <div className="text-3xl font-bold text-primary mb-2">6+</div>
               <div className="text-muted-foreground text-sm">Years building</div>
             </div>
-            {/* <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
-              <div className="text-3xl font-bold text-primary mb-2">?</div>
-              <div className="text-muted-foreground text-sm">?</div>
-            </div> */}
+            <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
+              <div className="text-3xl font-bold text-primary mb-2">2</div>
+              <div className="text-muted-foreground text-sm">Promotions in 2 years</div>
+            </div>
             <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
               <div className="text-3xl font-bold text-primary mb-2">$1M+</div>
               <div className="text-muted-foreground text-sm">Revenue Impact</div>
