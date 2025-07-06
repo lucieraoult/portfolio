@@ -7,52 +7,36 @@ import { ExternalLink, TrendingUp, Users, Zap, Target } from "lucide-react";
 const CaseStudies = () => {
   const caseStudies = [
     {
-      title: "AI-Powered Analytics Platform",
-      company: "TechCorp",
-      description: "Led the development of an ML-driven analytics platform that transformed how our enterprise clients understand their data.",
-      challenge: "Enterprise clients were struggling with data silos and couldn't get actionable insights from their complex datasets.",
-      solution: "Built a unified analytics platform with automated ML pipelines, natural language querying, and real-time dashboards.",
+      title: "Scaling Operations",
+      company: "Fixter",
+      description: "Led the development of an automated booking allocation algorithm that scaled ops and unlocked growth.",
+      challenge: "A surge in demand overwhelmed Fixter's operations, bookings had to be capped and core metrics were declining quickly. The challenge was a lack of visibility into ops processes.",
+      solution: "I identified allocation as the biggest bottleneck and redesigned the algorithm to handle complex variables like capacity, repair types, pricing, and timing. I tested assumptions quickly with the engineering lead and iterated based on results.",
       impact: [
-        { icon: TrendingUp, label: "340% increase in user engagement", value: "340%" },
-        { icon: Users, label: "10M+ active users", value: "10M+" },
-        { icon: Zap, label: "15% performance improvement", value: "15%" },
-        { icon: Target, label: "95% customer satisfaction", value: "95%" }
+        { icon: Zap, label: "30% decrease in total ops workload", value: "30%" },
+        { icon: TrendingUp, label: "65% automatic booking allocation, up from 15%", value: "65%" },
+        { icon: Target, label: "At peak period the next year, we handled 1.5x bookings with healthy metrics", value: "1.5x" },
+        { icon: Users, label: "Ops were initially skeptical but became the system's strongest advocates", value: "Trust" }
       ],
-      technologies: ["React", "Python", "TensorFlow", "Kubernetes", "PostgreSQL"],
-      timeline: "18 months",
-      role: "Led cross-functional team of 12 engineers, 3 designers, and 2 data scientists",
+      technologies: ["Data analysis", "User interviews", "Hypothesis-driven iterations"],
+      timeline: "2 months",
+      role: "Led discovery, prioritisation, and iteration while balancing multiple product streams. Collaborated closely with the engineering lead outside of sprints to deliver results quickly.",
     },
     {
-      title: "B2B SaaS Platform Scale-Up",
-      company: "StartupXYZ",
-      description: "Scaled a B2B platform from MVP to Series A, establishing product processes and driving significant revenue growth.",
-      challenge: "Early-stage startup needed to prove product-market fit and scale rapidly while maintaining product quality.",
-      solution: "Implemented data-driven product development, customer feedback loops, and scalable architecture patterns.",
+      title: "Fixing the Delivery Experience (NPS)",
+      company: "Fixter",
+      description: "Increased customer satisfaction and conversion rate by improving communication around car delivery times.",
+      challenge: "I was tasked with improving NPS. The team suspected late collections, but by analysing feedback and delivery data, I found the real issue: only 15% of deliveries were on time, compared to 80% of collections.",
+      solution: "I ran several A/B tests to replace arbitrary customer-selected delivery times with realistic windows. Early versions lowered conversion, but later iterations significantly improved it while keeping expectations realistic. I also implemented flows to enable garages to confirm return times upfront and notify customers with a clear, reliable window.",
       impact: [
-        { icon: TrendingUp, label: "ARR grew from $0 to $5M", value: "$5M" },
-        { icon: Users, label: "45% reduction in churn", value: "45%" },
-        { icon: Zap, label: "30% faster feature delivery", value: "30%" },
-        { icon: Target, label: "200+ API integrations", value: "200+" }
+        { icon: TrendingUp, label: "Checkout conversion rate increased by 7.5% overall", value: "7.5%" },
+        { icon: Users, label: "NPS increased by 4.6 points", value: "4.6 pts" },
+        { icon: Zap, label: "Deliveries on time went from 15% to 81%", value: "81%" },
+        // { icon: Target, label: "200+ API integrations", value: "200+" }
       ],
-      technologies: ["Node.js", "MongoDB", "Docker", "AWS", "GraphQL"],
-      timeline: "24 months",
-      role: "Senior PM responsible for product strategy, roadmap, and team processes",
-    },
-    {
-      title: "Mobile App Onboarding Optimization",
-      company: "BigTech Inc",
-      description: "Redesigned the user onboarding experience for a consumer mobile app with 50M+ monthly active users.",
-      challenge: "High drop-off rates during onboarding were limiting user acquisition and retention for the mobile platform.",
-      solution: "Conducted extensive user research, A/B tested multiple onboarding flows, and implemented progressive onboarding.",
-      impact: [
-        { icon: TrendingUp, label: "60% improvement in completion", value: "60%" },
-        { icon: Users, label: "50M+ monthly active users", value: "50M+" },
-        { icon: Zap, label: "80% reduction in crashes", value: "80%" },
-        { icon: Target, label: "20+ A/B tests conducted", value: "20+" }
-      ],
-      technologies: ["React Native", "Firebase", "Amplitude", "Figma"],
-      timeline: "8 months",
-      role: "Associate PM focused on user experience and retention metrics",
+      technologies: ["Product discovery", "Growth", "A/B testing", "Data analysis"],
+      timeline: "3 months",
+      role: "Led team of 5 engineers and 1 designer. Owned discovery, experimentation, and final implementation.",
     }
   ];
 
@@ -67,7 +51,7 @@ const CaseStudies = () => {
             Products that <span className="text-gradient">delivered</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Real-world examples of how I've helped teams build, scale, and optimize
+            Real-world examples of how I've helped teams build, scale, and optimise
             products that drive meaningful business outcomes.
           </p>
         </div>
@@ -80,9 +64,9 @@ const CaseStudies = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardContent className="p-0">
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="grid grid-cols-1 lg:grid-cols-5">
                   {/* Content */}
-                  <div className="p-8 lg:p-12">
+                  <div className="p-8 lg:p-12 lg:col-span-3">
                     <div className="mb-6">
                       <Badge className="bg-primary/10 text-primary mb-4">
                         {study.company}
@@ -109,7 +93,7 @@ const CaseStudies = () => {
                       </div>
 
                       <div>
-                        <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider">Technologies</h4>
+                        <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider">Focus areas</h4>
                         <div className="flex flex-wrap gap-2">
                           {study.technologies.map((tech) => (
                             <Badge
@@ -126,16 +110,16 @@ const CaseStudies = () => {
                       <div className="pt-4 border-t border-border">
                         <div className="flex items-center justify-between text-xs text-muted-foreground">
                           <span>Timeline: {study.timeline}</span>
-                          <Button variant="ghost" size="sm" className="h-auto p-0">
+                          {/* <Button variant="ghost" size="sm" className="h-auto p-0">
                             <ExternalLink className="h-3 w-3" />
-                          </Button>
+                          </Button> */}
                         </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Impact Metrics */}
-                  <div className="bg-muted/30 p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="bg-muted/30 p-8 lg:p-12 flex flex-col justify-center lg:col-span-2">
                     <h4 className="font-semibold mb-6 text-sm uppercase tracking-wider">Impact</h4>
                     <div className="grid grid-cols-2 gap-6">
                       {study.impact.map((metric, i) => (
@@ -165,7 +149,7 @@ const CaseStudies = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
             Want to see more detailed case studies?
           </p>
@@ -173,7 +157,7 @@ const CaseStudies = () => {
             Request Full Portfolio
             <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
