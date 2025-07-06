@@ -223,7 +223,7 @@ const Contact = () => {
         {/* Footer */}
         <footer className="mt-20 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
-            Built with Lovable, ChatGPT, and a ☕️
+            Built with Lovable, ChatGPT, Cursor, and a ☕️
           </p>
         </footer>
       </section>
