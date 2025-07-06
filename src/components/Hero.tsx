@@ -14,16 +14,8 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden py-20"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        {/* <div className="absolute top-20 left-20 w-32 h-32 border border-primary rounded-full"></div> */}
-        {/* <div className="absolute top-40 right-32 w-16 h-16 bg-primary/20 rounded-full"></div>
-        <div className="absolute bottom-40 left-1/4 w-24 h-24 border border-primary/30 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-20 h-20 bg-primary/10 rounded-full"></div> */}
-      </div>
-
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <p className="text-primary font-medium mb-4 text-sm tracking-wider uppercase">
