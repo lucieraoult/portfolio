@@ -16,7 +16,7 @@ const Hero = () => {
       id="hero"
       className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden py-20"
     >
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10 w-full">
         <div className="animate-fade-in">
           <p className="text-primary font-medium mb-4 text-sm tracking-wider uppercase">
             // Senior Product Manager
@@ -31,7 +31,7 @@ const Hero = () => {
             turning complex problems into elegant solutions.
           </p>
           
-          <div className="flex items-center justify-center space-x-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button
               variant="default"
               size="lg"
@@ -104,7 +104,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 inset-x-0 flex justify-center animate-bounce">
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
       </div>
     </section>
