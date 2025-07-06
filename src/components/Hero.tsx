@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden py-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden py-32"
     >
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10 w-full">
         <div className="animate-fade-in">
