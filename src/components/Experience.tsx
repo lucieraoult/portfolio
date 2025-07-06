@@ -10,56 +10,32 @@ const Experience = () => {
       role: "Senior Product Manager",
       period: "Apr 2024 - Present",
       location: "London, UK",
-      description: "B2B SaaS startup building products for large investment banks and hedge funds. Reporting to co-founder and working in a cross-functional team of engineers and designers.",
-      achievements: [
-        "Drove a near-million ARR product from concept to launch",
-        "Reduced churn rate by >20% in H1 2025 compared to full-year 2024",
-        "Led transformation to the product operating model",
-        "Hired 2 product designers",
-        "Promoted from Product Manager to Senior Product Manager within a year"
-      ],
-      technologies: ["Zero-to-One", "Enterprise SaaS", "Churn Reduction", "Security and Compliance", "Hiring"]
+      description: "B2B SaaS startup building products for large investment banks and hedge funds. 1st PM hire reporting to co-founder and working in a cross-functional team of engineers and designers. Responsible for both the hedge fund and the bank products, with a focus on user experience and launching new products.",
+      technologies: ["Zero-to-One", "Enterprise SaaS", "Churn Reduction", "Strategy", "Hiring", "First PM"]
     },
     {
       company: "Fixter",
       role: "Product Manager",
       period: "Feb 2022 - Jan 2024",
       location: "London, UK",
-      description: "End-to-end car maintenance platform startup, acquired by Renault. Led cross- functional teams with a focus on enhancing customer experience, operational scalability, and garage supply.",
-      achievements: [
-        "Reduced ops workload by 30% through booking-to-garage matching algorithm",
-        "Improved garage capacity model, reducing cancellation rate by 9%",
-        "Achieved a 20-point NPS increase within a year and +7.5% in overall CR",
-        "Led the launch of the market expansion into France, overcoming a 2-month delay"
-      ],
-      technologies: ["Scaling Operations", "Customer Experience", "Data", "Supply Strategy", "Market Expansion"]
+      description: "End-to-end car maintenance platform startup, acquired by Renault. 2nd PM hire, company doubled in size during my time there. Led the cross-functional team responsible for enhancing customer experience, operational scalability, and garage supply and also spent some time leading the growth team.",
+      technologies: ["Data", "Experimentation", "Growth", "Ops & Supply", "Customer Experience", "Team Processes"]
     },
     {
       company: "Epicery",
       role: "Full-Stack Web Developer",
       period: "Jul 2020 - May 2021",
       location: "Paris, France",
-      description: "Food delivery startup focused on premium groceries and artisan shops, acquired by DPD Group.",
-      achievements: [
-        "Led end-to-end development of “Send as Gift” feature, from checkout to secure recipient view",
-        "Implemented a rebrand on the website with Tailwind CSS",
-        "Worked across the customer website, API backend, merchant app and internal tools"
-      ],
-      technologies: ["Node.js", "Ruby", "React", "Tailwind CSS", "Ruby on Rails"]
+      description: "Food delivery startup focused on premium groceries and artisan shops, acquired by DPD Group. I worked as a full-stack developer in a small team, across our API, customer website, merchant app and internal tools. I led the end-to-end development of the “Send as Gift” feature, from checkout to secure recipient view and implemented a rebrand in Tailwind CSS.",
+      technologies: ["Node.js", "Ruby on Rails", "APIs", "React", "Tailwind CSS"]
     },
     {
       company: "Nokues",
       role: "Technical Co-Founder",
       period: "Sep 2018 - Jun 2020",
       location: "Barcelona, Spain",
-      description: "Full-stack developer building custom web applications for clients. Transitioned from engineering to product management through customer-facing project leadership.",
-      achievements: [
-        "Built a web app for end users to browse menus, place orders, and pay, with a management interface for restaurants to handle menus and incoming orders",
-        "Saw the app used at 3 events and processed over 200 orders",
-        "Onboarded 15 restaurants",
-        "Participated in Startupbootcamp accelerator"
-      ],
-      technologies: ["React", "Ruby on Rails", "Ruby"]
+      description: "Built a web app for end users to browse menus, place orders, and pay, with a management interface for restaurants to handle menus and incoming orders. Onboarded 15 restaurants, saw the app used at 3 events and processed >200 orders. Participated in the Startupbootcamp accelerator.",
+      technologies: ["Zero-to-One", "Ruby on Rails", "APIs", "React"]
     }
   ];
 
@@ -87,7 +63,7 @@ const Experience = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 gap-8">
                   <div className="lg:col-span-1">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                       <Calendar className="h-4 w-4" />
@@ -102,22 +78,7 @@ const Experience = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {exp.description}
                     </p>
-                  </div>
-                  
-                  <div className="lg:col-span-2">
-                    <div className="mb-6">
-                      <h4 className="font-semibold mb-3">Key Achievements</h4>
-                      <ul className="space-y-2">
-                        {exp.achievements.map((achievement, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex items-start">
-                            <span className="text-primary mr-3 mt-1">•</span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div>
+                    <div class="mt-4">
                       <h4 className="font-semibold mb-3">Focus Areas</h4>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
@@ -132,6 +93,7 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
+                  
                 </div>
               </CardContent>
             </Card>
