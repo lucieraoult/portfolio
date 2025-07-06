@@ -61,7 +61,7 @@ const Contact = () => {
               Let's build something <span className="text-gradient">amazing</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I'm currently exploring new product opportunities and would love to connect. Whether you're hiring, building something ambitious, or just want to chat about product and tech, feel free to reach out.
+              I'm currently exploring new product opportunities and would love to connect. Whether you're hiring or just want to chat about product and tech, feel free to reach out.
             </p>
             <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground mb-8 mt-4">
               <div className="flex items-center gap-2">
@@ -73,63 +73,63 @@ const Contact = () => {
                 Looking for a new role
               </div>
             </div>
-          </div>
-          
-          <div className="flex items-center justify-center space-x-4 mb-12">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button
-                    variant="default"
-                    size="lg"
-                    className="group"
-                    onClick={copyEmailToClipboard}
-                  >
+            <div className="flex items-center justify-center space-x-4 mb-12">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      variant="default"
+                      size="lg"
+                      className="group"
+                      onClick={copyEmailToClipboard}
+                    >
+                      {copiedEmail ? (
+                        <>
+                          <Copy className="h-5 w-5 mr-2" />
+                          Email Copied!
+                        </>
+                      ) : (
+                        <>
+                          <Mail className="h-5 w-5 mr-2" />
+                          Contact Me
+                        </>
+                      )}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
                     {copiedEmail ? (
-                      <>
-                        <Copy className="h-5 w-5 mr-2" />
-                        Email Copied!
-                      </>
+                      <p>Email copied to clipboard!</p>
                     ) : (
-                      <>
-                        <Mail className="h-5 w-5 mr-2" />
-                        Contact Me
-                      </>
+                      <p>Click to copy: lucieraoult@gmail.com</p>
                     )}
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  {copiedEmail ? (
-                    <p>Email copied to clipboard!</p>
-                  ) : (
-                    <p>Click to copy: lucieraoult@gmail.com</p>
-                  )}
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <div className="flex items-center space-x-3">
-              <Button variant="ghost" size="sm" asChild>
-                <a
-                  href="https://linkedin.com/in/lucie-raoult"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="sm" asChild>
-                <a
-                  href="https://github.com/lucieraoult"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <div className="flex items-center space-x-3">
+                <Button variant="ghost" size="sm" asChild>
+                  <a
+                    href="https://linkedin.com/in/lucie-raoult"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <a
+                    href="https://github.com/lucieraoult"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
+          
           
           {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"> */}
           {/* <div className="flex justify-center items-center flex-wrap gap-6 mb-12">
