@@ -87,6 +87,10 @@ const Hero = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
+              <div className="text-3xl font-bold text-primary mb-2">$1M+</div>
+              <div className="text-muted-foreground text-sm">Revenue Impact</div>
+            </div>
             <div className="animate-slide-in">
               <div className="text-3xl font-bold text-primary mb-2">6+</div>
               <div className="text-muted-foreground text-sm">Years building</div>
@@ -94,10 +98,6 @@ const Hero = () => {
             <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
               <div className="text-3xl font-bold text-primary mb-2">2</div>
               <div className="text-muted-foreground text-sm">Promotions in 2 years</div>
-            </div>
-            <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
-              <div className="text-3xl font-bold text-primary mb-2">$1M+</div>
-              <div className="text-muted-foreground text-sm">Revenue Impact</div>
             </div>
           </div>
         </div>

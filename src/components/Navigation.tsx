@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,12 +40,18 @@ const Navigation = () => {
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="text-lg font-medium hover:text-primary transition-colors"
-          >
-            lucie.page
-          </button>
+          <div className="flex items-center justify-between space-x-2">
+            <Avatar className="h-6 w-6">
+              <AvatarImage src="/photo.png" alt="@username" />
+              <AvatarFallback>JD</AvatarFallback> {/* fallback initials */}
+            </Avatar>
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="text-lg font-medium hover:text-primary transition-colors"
+            >
+              lucie.page
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
