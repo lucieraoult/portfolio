@@ -20,7 +20,7 @@ const CaseStudies = () => {
       ],
       technologies: ["Data analysis", "User interviews", "Hypothesis-driven iterations"],
       timeline: "2 months",
-      role: "Led discovery, prioritisation, and iteration while balancing multiple product streams. Collaborated closely with the engineering lead outside of sprints to deliver results quickly.",
+      role: "Collaborated closely with the engineering lead outside of sprints to deliver results quickly. Led discovery, prioritisation, and iteration while balancing multiple product streams.",
     },
     {
       title: "Fixing the Delivery Experience (NPS)",
